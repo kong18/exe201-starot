@@ -38,7 +38,12 @@ namespace Exe.Starot.Infrastructure.Repositories
 
             return sb.ToString();
         }
+        public async Task UpdateRefreshTokenAsync(UserEntity user, string refreshToken, DateTime expiryTime)
+        {
+            user.SetRefreshToken(refreshToken, expiryTime);
 
+            await UnitOfWork.SaveChangesAsync();
+        }
         public string HashPassword(string password)
         {
             return BCrypt.Net.BCrypt.HashPassword(password);

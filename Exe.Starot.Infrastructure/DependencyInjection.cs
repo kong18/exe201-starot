@@ -1,4 +1,5 @@
-﻿using Exe.Starot.Domain.Common.Interfaces;
+﻿using AutoMapper;
+using Exe.Starot.Domain.Common.Interfaces;
 using Exe.Starot.Domain.Entities.Repositories;
 using Exe.Starot.Infrastructure.Persistence;
 using Exe.Starot.Infrastructure.Repositories;
@@ -28,9 +29,9 @@ namespace Exe.Starot.Infrastructure
 
             services.AddTransient<IUserRepository, UserRepository>();
 
+            services.AddAutoMapper(typeof(ApplicationDbContext));
 
             return services;
         }
-
     }
 }

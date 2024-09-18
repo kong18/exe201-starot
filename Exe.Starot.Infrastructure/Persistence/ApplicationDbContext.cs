@@ -13,11 +13,11 @@ namespace Exe.Starot.Infrastructure.Persistence
             var migrator = this.Database.GetService<IMigrator>();
             migrator.Migrate();
         }
-     
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-           
+
 
 
             base.OnModelCreating(modelBuilder);
@@ -27,25 +27,7 @@ namespace Exe.Starot.Infrastructure.Persistence
         }
         private void ConfigureModel(ModelBuilder modelBuilder)
         {
-            var user = new UserEntity
-            {
-                Email = "manager@gmail.com",
-                Password = BCrypt.Net.BCrypt.HashPassword("123456"),
-                Role = "Manager"
-            };
 
-            var user1 = new UserEntity
-            {
-                Email = "business@gmail.com",
-                Password = BCrypt.Net.BCrypt.HashPassword("123456"),
-                Role = "Business"
-            };
-
-        
-
-            modelBuilder.Entity<UserEntity>().HasData(user);
-            modelBuilder.Entity<UserEntity>().HasData(user1);
-           
         }
     }
 }
