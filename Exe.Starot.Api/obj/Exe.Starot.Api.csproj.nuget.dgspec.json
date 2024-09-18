@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Api\\Exe.Starot.Api.csproj": {}
+    "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj": {}
   },
   "projects": {
-    "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Api\\Exe.Starot.Api.csproj": {
+    "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
+        "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
         "projectName": "Exe.Starot.Api",
-        "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
+        "projectPath": "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
         "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
-        "outputPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Api\\obj\\",
+        "outputPath": "D:\\exe201-starot\\Exe.Starot.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
-                "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj"
+              "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
+                "projectPath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj"
               },
-              "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj": {
-                "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj"
+              "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj": {
+                "projectPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj"
               },
-              "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot\\Exe.Starot.Application.csproj": {
-                "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot\\Exe.Starot.Application.csproj"
+              "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj": {
+                "projectPath": "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj"
               }
             }
           }
@@ -120,14 +120,14 @@
         }
       }
     },
-    "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
+    "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
+        "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
         "projectName": "Exe.Starot.Domain",
-        "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
+        "projectPath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
         "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
-        "outputPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\obj\\",
+        "outputPath": "D:\\exe201-starot\\Exe.Starot.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -175,14 +175,14 @@
         }
       }
     },
-    "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj": {
+    "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
+        "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
         "projectName": "Exe.Starot.Infrastructure",
-        "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
+        "projectPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
-        "outputPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\obj\\",
+        "outputPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -199,8 +199,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
-                "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj"
+              "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
+                "projectPath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj"
               }
             }
           }
@@ -280,14 +280,14 @@
         }
       }
     },
-    "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot\\Exe.Starot.Application.csproj": {
+    "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot\\Exe.Starot.Application.csproj",
+        "projectUniqueName": "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj",
         "projectName": "Exe.Starot.Application",
-        "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot\\Exe.Starot.Application.csproj",
+        "projectPath": "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj",
         "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
-        "outputPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot\\obj\\",
+        "outputPath": "D:\\exe201-starot\\Exe.Starot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -304,11 +304,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
-                "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj"
+              "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
+                "projectPath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj"
               },
-              "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj": {
-                "projectPath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj"
+              "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj": {
+                "projectPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj"
               }
             }
           }

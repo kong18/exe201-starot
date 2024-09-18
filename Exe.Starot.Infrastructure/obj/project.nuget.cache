@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KrIFc8HceiwvVxsCeOYUS6Hi0N16gy2a3gWdmnWnx0M/1gClSLr2IpZKWnPrIAY5XvEV/KxXTfomXqw4KPAd5A==",
+  "dgSpecHash": "1pGkW7L7rBTecNbYu+lpWhqXWWasK+Ffpg8TEaIkITELsiKOSpeXCuqIKe5JY/w6q9OLiBVkB45kwRRxpyoiwg==",
   "success": true,
-  "projectFilePath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
+  "projectFilePath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cong\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Cong\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
