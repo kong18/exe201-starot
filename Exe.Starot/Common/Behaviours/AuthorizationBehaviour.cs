@@ -1,5 +1,5 @@
-﻿using Exe.Starot.Application.Exceptions;
-using Exe.Starot.Application.Interfaces;
+﻿using Exe.Starot.Application.Common.Interfaces;
+using Exe.Starot.Application.Exceptions;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using System;
@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe.Starot.Application.Behaviours
+namespace Exe.Starot.Application.Common.Behaviours
 {
     public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
         where TRequest : notnull

@@ -1,4 +1,4 @@
-﻿using Exe.Starot.Application.Interfaces;
+﻿using Exe.Starot.Application.Common.Interfaces;
 using IdentityModel;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;

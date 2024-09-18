@@ -1,4 +1,4 @@
-﻿using Exe.Starot.Application.Interfaces;
+﻿using Exe.Starot.Application.Common.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe.Starot.Application.Behaviours
+namespace Exe.Starot.Application.Common.Behaviours
 {
     public class PerformanceBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
           where TRequest : notnull

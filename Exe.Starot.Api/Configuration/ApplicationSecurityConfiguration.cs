@@ -1,5 +1,5 @@
 ﻿using Exe.Starot.Api.Services;
-using Exe.Starot.Application.Interfaces;
+using Exe.Starot.Application.Common.Interfaces;
 using Exe.Starot.Domain.Entities.Repositories;
 using Exe.Starot.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -42,7 +42,7 @@ namespace Exe.Starot.Api.Configuration
                     ValidateLifetime = true,
                     ValidIssuer = configuration["JwtSettings:Issuer"],
                     ValidAudience = configuration["JwtSettings:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("from kongez deptrai6mui with love")),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("nguyencongstarotapp")),
                 };
             })
        

@@ -46,7 +46,7 @@ namespace Exe.Starot.Api.Services
                 ValidateIssuer = false,
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secret)),
-                ValidateLifetime = false 
+                ValidateLifetime = false
             };
 
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -60,7 +60,7 @@ namespace Exe.Starot.Api.Services
 
             return principal;
         }
-    public string CreateToken(string email, string roles)
+        public string CreateToken(string email, string roles)
         {
             var claims = new List<Claim>
             {
@@ -91,7 +91,7 @@ namespace Exe.Starot.Api.Services
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-       
+
         public string CreateToken(string subject, string role, int expiryDays)
         {
             var claims = new[]
