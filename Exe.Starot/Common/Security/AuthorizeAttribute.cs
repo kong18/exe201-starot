@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe.Starot.Application.Security
+namespace Exe.Starot.Application.Common.Security
 {
     [AttributeUsage(AttributeTargets.All)]
     public class AuthorizeAttribute : Attribute

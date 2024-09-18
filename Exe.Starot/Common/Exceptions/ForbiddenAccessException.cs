@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe.Starot.Application.Exceptions
+namespace Exe.Starot.Application.Common.Exceptions
 {
     public class ForbiddenAccessException : Exception
     {

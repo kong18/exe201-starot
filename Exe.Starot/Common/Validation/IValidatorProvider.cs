@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe.Starot.Application.Validation
+namespace Exe.Starot.Application.Common.Validation
 {
     public interface IValidatorProvider
     {

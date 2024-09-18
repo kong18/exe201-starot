@@ -1,4 +1,4 @@
-﻿using Exe.Starot.Application.Security;
+﻿using Exe.Starot.Application.Common.Security;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 

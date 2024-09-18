@@ -1,7 +1,9 @@
-﻿using Exe.Starot.Application.Interfaces;
+﻿using Exe.Starot.Application.Common.Interfaces;
+using Exe.Starot.Application.User.Authenticate;
 using Exe.Starot.Domain.Entities.Base;
 using Exe.Starot.Domain.Entities.Repositories;
 using IdentityModel;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -13,13 +15,15 @@ namespace Exe.Starot.Api.Controllers
     {
         private readonly IUserRepository _userRepository;
         private readonly IJwtService _jwtService;
-
-        public AuthController(IUserRepository userRepository, IJwtService jwtService)
+        private readonly IMediator _mediator;
+        public AuthController(IUserRepository userRepository, IJwtService jwtService, IMediator mediator)
         {
             _userRepository = userRepository;
             _jwtService = jwtService;
+            _mediator = mediator;
         }
 
+        // Refresh token API to issue a new access token using the refresh token
         [HttpPost("refresh-token")]
         public async Task<IActionResult> RefreshToken([FromBody] TokenRequest tokenRequest)
         {
@@ -45,5 +49,12 @@ namespace Exe.Starot.Api.Controllers
                 RefreshToken = newRefreshToken
             });
         }
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginQuery loginQuery, CancellationToken cancellationToken)
+        {
+            var result = await _mediator.Send(loginQuery, cancellationToken);
+            return Ok(result);
+        }
     }
+
 }

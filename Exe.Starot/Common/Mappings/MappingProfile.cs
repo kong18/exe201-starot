@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe.Starot.Application.Mappings
+namespace Exe.Starot.Application.Common.Mappings
 {
-    internal class IMapFrom
+    internal class MappingProfile
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe.Starot.Application.Interfaces
+namespace Exe.Starot.Application.Common.Interfaces
 {
     public interface ICurrentUserService
     {

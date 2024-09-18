@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exe.Starot.Application.Pagination
+namespace Exe.Starot.Application.Common.Pagination
 {
     public class PagedResult<T>
     {
