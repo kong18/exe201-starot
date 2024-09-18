@@ -1,5 +1,7 @@
 ﻿using Exe.Starot.Api.Services;
 using Exe.Starot.Application.Interfaces;
+using Exe.Starot.Domain.Entities.Repositories;
+using Exe.Starot.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -17,6 +19,8 @@ namespace Exe.Starot.Api.Configuration
         this IServiceCollection services,
             IConfiguration configuration)
         {
+            services.AddScoped<IUserRepository, UserRepository>();
+
             services.AddTransient<ICurrentUserService, CurrentUserService>();
             services.AddTransient<IJwtService, JwtService>();
             JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
@@ -53,21 +57,7 @@ namespace Exe.Starot.Api.Configuration
         {
             // Configure policies and other authorization options here. For example:
             // options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("role", "employee"));
-            options.AddPolicy("Business", policy =>
-            {
-                policy.RequireAuthenticatedUser();
-                policy.RequireClaim("role", "Business");
-            });
-            options.AddPolicy("Manager", policy =>
-            {
-                policy.RequireAuthenticatedUser();
-                policy.RequireClaim("role", "Manager");
-            });
-            options.AddPolicy("Kiosk", policy =>
-            {
-                policy.RequireAuthenticatedUser();
-                policy.RequireClaim("role", "Kiosk");
-            });
+           
         }
     }
 }

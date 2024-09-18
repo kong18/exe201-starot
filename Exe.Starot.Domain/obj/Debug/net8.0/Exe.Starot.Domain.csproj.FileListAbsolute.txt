@@ -10,3 +10,4 @@ D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.dll
 D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\refint\Exe.Starot.Domain.dll
 D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.pdb
 D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\ref\Exe.Starot.Domain.dll
+D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.csproj.AssemblyReference.cache

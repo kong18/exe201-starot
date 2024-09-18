@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Exe.Starot.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae2e0e75536672845736b3221f5969f51714ade5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32283cf7d10f554cbb7e80eb833f2db4952d4d06")]
 [assembly: System.Reflection.AssemblyProductAttribute("Exe.Starot.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Exe.Starot.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
