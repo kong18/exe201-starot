@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IfdrgCF2Mt0ODpujsIfgX0GNNLSMJv1LsWFX5WkwsmaOa+iZTBOBTZIjYMsnmvtnocZlQP46bXOHyJrNG0MzmA==",
+  "dgSpecHash": "RIzlhbuw9gVPePQycBF0jlAbDEowUSsiJj7ZQ2Svdhhm1YgfuNZ5d8C0KjRk+O7afEFY0Y6N0toKgIAY2QqycA==",
   "success": true,
-  "projectFilePath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
+  "projectFilePath": "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cong\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
     "C:\\Users\\Cong\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",

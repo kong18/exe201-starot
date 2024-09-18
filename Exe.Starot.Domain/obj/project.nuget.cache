@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7S+kjZCd6PFiE7onI2AT/a3auD+o0lknD8QPyNFiBU5Ufg1unqZR5XzsCBq7Crrg2w8yIEwb/BBM25KbjkSAWg==",
+  "dgSpecHash": "EOGaCSaBYJRpNG8rzG5yLOWhf0dVqAD4Cji4JHm/xAJXuA2IkrnK3vek95tdHH5elSR//PA+JGBx/INsHf+oKA==",
   "success": true,
-  "projectFilePath": "D:\\exe201_Starot\\Exe.StarotSolution\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
+  "projectFilePath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
