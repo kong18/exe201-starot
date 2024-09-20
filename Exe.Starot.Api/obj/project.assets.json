@@ -7715,19 +7715,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cong\\.nuget\\packages\\": {}
+    "C:\\Users\\sonho\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
+      "projectUniqueName": "D:\\EXE201\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
       "projectName": "Exe.Starot.Api",
-      "projectPath": "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
-      "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
-      "outputPath": "D:\\exe201-starot\\Exe.Starot.Api\\obj\\",
+      "projectPath": "D:\\EXE201\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
+      "packagesPath": "C:\\Users\\sonho\\.nuget\\packages\\",
+      "outputPath": "D:\\EXE201\\exe201-starot\\Exe.Starot.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sonho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7741,14 +7746,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
-              "projectPath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj"
+            "D:\\EXE201\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj": {
+              "projectPath": "D:\\EXE201\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj"
             },
-            "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj": {
-              "projectPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj"
+            "D:\\EXE201\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj": {
+              "projectPath": "D:\\EXE201\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj"
             },
-            "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj": {
-              "projectPath": "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj"
+            "D:\\EXE201\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj": {
+              "projectPath": "D:\\EXE201\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj"
             }
           }
         }
@@ -7757,6 +7762,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -7829,7 +7839,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
