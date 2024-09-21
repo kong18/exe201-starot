@@ -617,15 +617,9 @@ namespace Exe.Starot.Infrastructure.Migrations
 
             modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.UserEntity", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("ID")
                         .HasMaxLength(36)
                         .HasColumnType("nvarchar(36)");
-
-                    b.Property<int>("AccessFailedCount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateOfBirth")
                         .HasColumnType("datetime2");
@@ -635,42 +629,40 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
-
                     b.Property<bool>("Gender")
                         .HasColumnType("bit");
-
-                    b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<string>("NormalizedEmail")
+                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("NgayTao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("NgayXoa")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NguoiCapNhatID")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NormalizedUserName")
+                    b.Property<string>("NguoiTaoID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NguoiXoaID")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PasswordHash")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("bit");
 
                     b.Property<string>("RefreshToken")
                         .HasColumnType("nvarchar(max)");
@@ -681,19 +673,14 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Property<DateTime>("RefreshTokenIssuedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("UserName")
+                    b.Property<string>("Role")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Wallet")
                         .HasColumnType("decimal(18,4)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Users");
                 });
