@@ -33,7 +33,7 @@ namespace Exe.Starot.Application.User.Authenticate
                 throw new NotFoundException("Invalid email or password.");
             }
 
-            var accessToken = _jwtService.CreateToken(user.Id, user.Email);
+            var accessToken = _jwtService.CreateToken(user.ID, user.Email);
             var refreshToken = _jwtService.GenerateRefreshToken();
 
             await _userRepository.UpdateRefreshTokenAsync(user, refreshToken, DateTime.UtcNow.AddDays(30));

@@ -78,7 +78,7 @@ namespace Exe.Starot.Infrastructure.Persistence
 
             modelBuilder.Entity<UserEntity>(entity =>
             {
-                entity.Property(e => e.Id).HasMaxLength(36);
+                entity.Property(e => e.ID).HasMaxLength(36);
                 entity.Property(e => e.Name).HasMaxLength(255);
                 entity.Property(e => e.Email).HasMaxLength(255);
                 entity.Property(e => e.Phone).HasMaxLength(20);

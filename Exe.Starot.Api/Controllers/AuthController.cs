@@ -38,7 +38,7 @@ namespace Exe.Starot.Api.Controllers
                 return Unauthorized("Invalid refresh token");
             }
 
-            var newJwtToken = _jwtService.CreateToken(user.Id, user.Email);
+            var newJwtToken = _jwtService.CreateToken(user.ID, user.Email);
             var newRefreshToken = _jwtService.GenerateRefreshToken();
 
             await _userRepository.UpdateRefreshTokenAsync(user, newRefreshToken, DateTime.UtcNow.AddDays(30));
