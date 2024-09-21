@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 namespace Exe.Starot.Domain.Entities.Base
 {
-    public class UserEntity : IdentityUser
+    public class UserEntity : Entity
     {
         public string Name { get; set; }
         public string? RefreshToken { get; set; }
         public DateTime RefreshTokenExpiryTime { get; set; }
         public DateTime RefreshTokenIssuedAt { get; set; }
         public string Email { get; set; }
+        public string PasswordHash { get; set; }
+        public string Role { get; set; }
         [Column(TypeName = "decimal(18,4)")]
         public decimal Wallet { get; set; }
         public string Phone { get; set; }

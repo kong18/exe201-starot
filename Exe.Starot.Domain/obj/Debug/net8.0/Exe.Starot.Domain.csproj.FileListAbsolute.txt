@@ -11,16 +11,3 @@ D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\refint\Exe.Starot.Domain.dll
 D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.pdb
 D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\ref\Exe.Starot.Domain.dll
 D:\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.csproj.AssemblyReference.cache
-D:\EXE201\exe201-starot\Exe.Starot.Domain\bin\Debug\net8.0\Exe.Starot.Domain.deps.json
-D:\EXE201\exe201-starot\Exe.Starot.Domain\bin\Debug\net8.0\Exe.Starot.Domain.dll
-D:\EXE201\exe201-starot\Exe.Starot.Domain\bin\Debug\net8.0\Exe.Starot.Domain.pdb
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.csproj.AssemblyReference.cache
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.GeneratedMSBuildEditorConfig.editorconfig
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.AssemblyInfoInputs.cache
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.AssemblyInfo.cs
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.csproj.CoreCompileInputs.cache
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.sourcelink.json
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.dll
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\refint\Exe.Starot.Domain.dll
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\Exe.Starot.Domain.pdb
-D:\EXE201\exe201-starot\Exe.Starot.Domain\obj\Debug\net8.0\ref\Exe.Starot.Domain.dll
