@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exe.Starot.Domain.Entities.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -14,6 +15,7 @@ namespace Exe.Starot.Application.Common.Interfaces
         string CreateToken(string subject, string role, int expiryDays);
         ClaimsPrincipal GetPrincipalFromExpiredToken(string token);
         string GenerateRefreshToken();
+        Task<object?> RefreshTokenAsync(TokenRequest tokenRequest);
 
     }
 }
