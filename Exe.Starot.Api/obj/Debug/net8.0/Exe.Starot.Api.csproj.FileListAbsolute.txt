@@ -1,10 +1,3 @@
-D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.csproj.AssemblyReference.cache
-D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.GeneratedMSBuildEditorConfig.editorconfig
-D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.AssemblyInfoInputs.cache
-D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.AssemblyInfo.cs
-D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.csproj.CoreCompileInputs.cache
-D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.MvcApplicationPartsAssemblyInfo.cache
-D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.sourcelink.json
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\appsettings.Development.json
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\appsettings.json
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Exe.Starot.Api.exe
@@ -20,7 +13,6 @@ D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\HealthChecks.SqlServer.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\HealthChecks.UI.Client.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\HealthChecks.UI.Core.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\AutoMapper.dll
-D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Azure.Core.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Azure.Identity.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
@@ -35,6 +27,9 @@ D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\IdentityModel.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\MediatR.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\MediatR.Contracts.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -50,6 +45,9 @@ D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.S
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -87,6 +85,7 @@ D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\System.Management.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\System.Memory.Data.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\System.Text.Json.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -164,6 +163,14 @@ D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Exe.Starot.Infrastructure.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Exe.Starot.Domain.pdb
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Exe.Starot.Infrastructure.pdb
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Exe.Starot.Application.pdb
+D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.csproj.AssemblyReference.cache
+D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.AssemblyInfoInputs.cache
+D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.AssemblyInfo.cs
+D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.csproj.CoreCompileInputs.cache
+D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.sourcelink.json
 D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\staticwebassets.build.json
 D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\staticwebassets.development.json
 D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\staticwebassets\msbuild.Exe.Starot.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -178,11 +185,3 @@ D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\refint\Exe.Starot.Api.dll
 D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.pdb
 D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.genruntimeconfig.cache
 D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\ref\Exe.Starot.Api.dll
-D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
-D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
-D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\exe201-starot\Exe.Starot.Api\obj\Debug\net8.0\Exe.Starot.Api.MvcApplicationPartsAssemblyInfo.cs

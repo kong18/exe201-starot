@@ -27,27 +27,14 @@ namespace Exe.Starot.Api.Controllers
         [HttpPost("refresh-token")]
         public async Task<IActionResult> RefreshToken([FromBody] TokenRequest tokenRequest)
         {
-            var principal = _jwtService.GetPrincipalFromExpiredToken(tokenRequest.Token);
-            var userEmail = principal?.FindFirst(JwtClaimTypes.Email)?.Value;
+            var result = await _jwtService.RefreshTokenAsync(tokenRequest);
 
-            if (userEmail == null) return Unauthorized();
-
-            var user = await _userRepository.FindAsync(u => u.Email == userEmail);
-            if (user == null || !user.IsRefreshTokenValid(tokenRequest.RefreshToken))
+            if (result == null)
             {
                 return Unauthorized("Invalid refresh token");
             }
 
-            var newJwtToken = _jwtService.CreateToken(user.ID, user.Email);
-            var newRefreshToken = _jwtService.GenerateRefreshToken();
-
-            await _userRepository.UpdateRefreshTokenAsync(user, newRefreshToken, DateTime.UtcNow.AddDays(30));
-
-            return Ok(new
-            {
-                Token = newJwtToken,
-                RefreshToken = newRefreshToken
-            });
+            return Ok(result);
         }
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginQuery loginQuery, CancellationToken cancellationToken)

@@ -42,7 +42,7 @@ namespace Exe.Starot.Api.Configuration
                     ValidateLifetime = true,
                     ValidIssuer = configuration["JwtSettings:Issuer"],
                     ValidAudience = configuration["JwtSettings:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("nguyencongstarotapp")),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("from sonhohuu deptrai6mui with love")),
                 };
             })
        
