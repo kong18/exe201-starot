@@ -27,3 +27,4 @@ namespace Exe.Starot.Application.User.Authenticate
         public string Password { get; set; }
     }
 }
+
