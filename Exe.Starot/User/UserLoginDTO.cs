@@ -15,7 +15,7 @@ namespace Exe.Starot.Application.User
         public string RefreshToken { get; set; }
         public string Email { get; set; }
         public string Role { get; set; }
-        public int EntityId { get; set; }
+        public string EntityId { get; set; }
 
         public void Mapping(Profile profile)
         {
