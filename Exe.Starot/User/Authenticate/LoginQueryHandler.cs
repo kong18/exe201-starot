@@ -41,22 +41,20 @@ namespace Exe.Starot.Application.User.Authenticate
             var userLoginDto = _mapper.Map<UserLoginDTO>(user);
             userLoginDto.Token = accessToken;
             userLoginDto.RefreshToken = refreshToken;
-            if (user.Customers != null)
-            {
-                userLoginDto.EntityId = user.ID;
-                userLoginDto.Role = "Customer";
-            }
-            if (user.Readers != null)
-            {
-                userLoginDto.EntityId = user.ID;
-                userLoginDto.Role = "Reader";
-            }
-            else
-            {
-                throw new NotFoundException($"No associated entity found for user - {request.Email}");
-            }
-
-
+            //if (user.Customers != null)
+            //{
+            //    userLoginDto.EntityId = user.ID;
+            //    userLoginDto.Role = "Customer";
+            //}
+            //if (user.Readers != null)
+            //{
+            //    userLoginDto.EntityId = user.ID;
+            //    userLoginDto.Role = "Reader";
+            //}
+            //else
+            //{
+            //    throw new NotFoundException($"No associated entity found for user - {request.Email}");
+            //}
             return userLoginDto;
         }
     }
