@@ -1895,7 +1895,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\Cong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1903,11 +1903,11 @@
       "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
       "projectName": "Exe.Starot.Domain",
       "projectPath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
       "outputPath": "D:\\exe201-starot\\Exe.Starot.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1958,7 +1958,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

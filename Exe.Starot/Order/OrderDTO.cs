@@ -31,7 +31,7 @@ namespace Exe.Starot.Application.Order
             profile.CreateMap<OrderDetailEntity, ResponseItem>()
                 .ForMember(dto => dto.Name, opt => opt.MapFrom(entity => entity.Product.Name))
                 .ForMember(dto => dto.UnitPrice, opt => opt.MapFrom(entity => entity.UnitPrice))
-                .ForMember(dto => dto.Quantity, opt => opt.MapFrom(entity => entity.Amount))
+                .ForMember(dto => dto.Amount, opt => opt.MapFrom(entity => entity.Amount))
                 .ForMember(dto => dto.Price, opt => opt.MapFrom(entity => entity.UnitPrice))
                 .ForMember(dto => dto.ProductID, opt => opt.MapFrom(entity => entity.ProductId));
         
@@ -47,11 +47,10 @@ namespace Exe.Starot.Application.Order
 
             public decimal UnitPrice { get; set; }
 
-            public int Quantity { get; set; }
+            public int Amount { get; set; }
 
             public decimal Price { get; set; }
 
-            public string? Size { get; set; }
         }
     }
 }

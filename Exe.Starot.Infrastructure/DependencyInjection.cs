@@ -28,7 +28,9 @@ namespace Exe.Starot.Infrastructure
             services.AddScoped<IUnitOfWork>(provider => provider.GetRequiredService<ApplicationDbContext>());
 
             services.AddTransient<IUserRepository, UserRepository>();
-            
+            services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IOrderDetailRepository, OrderDetailRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
 
             services.AddAutoMapper(typeof(ApplicationDbContext));
 
