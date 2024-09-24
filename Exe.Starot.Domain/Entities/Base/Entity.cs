@@ -13,21 +13,21 @@ namespace Exe.Starot.Domain.Entities.Base
         protected Entity()
         {
             ID = Guid.NewGuid().ToString("N");
-            NgayTao = NgayCapNhatCuoi = DateTime.Now;
+            CreatedDate = LastUpdated = DateTime.Now;
         }
 
         [Key]
         public string ID { get; set; }
 
 
-        public string? NguoiTaoID { get; set; }
-        public DateTime? NgayTao { get; set; }
+        public string? CreatedBy { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
-        public string? NguoiCapNhatID { get; set; }
-        public DateTime? NgayCapNhatCuoi { get; set; }
+        public string? UpdatedBy { get; set; }
+        public DateTime? LastUpdated { get; set; }
 
-        public string? NguoiXoaID { get; set; }
-        public DateTime? NgayXoa { get; set; }
+        public string? DeletedBy { get; set; }
+        public DateTime? DeletedDay { get; set; }
 
 
         [NotMapped]
