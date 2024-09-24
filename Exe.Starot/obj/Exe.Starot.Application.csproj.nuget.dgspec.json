@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
         "projectName": "Exe.Starot.Domain",
         "projectPath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
         "outputPath": "D:\\exe201-starot\\Exe.Starot.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -75,11 +75,11 @@
         "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
         "projectName": "Exe.Starot.Infrastructure",
         "projectPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
         "outputPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -174,7 +174,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -184,11 +184,11 @@
         "projectUniqueName": "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj",
         "projectName": "Exe.Starot.Application",
         "projectPath": "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
         "outputPath": "D:\\exe201-starot\\Exe.Starot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -245,6 +245,10 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -290,7 +294,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
