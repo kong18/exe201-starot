@@ -43,22 +43,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime?>("NgayCapNhat")
+                    b.Property<DateTime?>("UpdatedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Type")
@@ -86,22 +86,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("PackageId")
@@ -139,22 +139,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Property<int>("Membership")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
@@ -174,22 +174,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Property<string>("ID")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductId")
@@ -229,22 +229,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Rating")
@@ -272,22 +272,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Property<int>("Amount")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OrderId")
@@ -323,22 +323,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("OrderDate")
@@ -381,22 +381,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime?>("NgayCapNhat")
+                    b.Property<DateTime?>("UpdatedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
@@ -443,22 +443,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
@@ -483,22 +483,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Quote")
@@ -544,22 +544,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime?>("NgayCapNhat")
+                    b.Property<DateTime?>("UpdatedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Type")
@@ -584,22 +584,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Property<int>("AchievementId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
@@ -637,22 +637,22 @@ namespace Exe.Starot.Infrastructure.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime?>("NgayCapNhatCuoi")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayTao")
+                    b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("NgayXoa")
+                    b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NguoiCapNhatID")
+                    b.Property<string>("UpdatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiTaoID")
+                    b.Property<string>("CreatedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NguoiXoaID")
+                    b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PasswordHash")
