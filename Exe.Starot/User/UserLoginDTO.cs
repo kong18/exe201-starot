@@ -19,7 +19,7 @@ namespace Exe.Starot.Application.User
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<UserEntity, UserLoginDTO>();
+            profile.CreateMap<UserEntity, UserLoginDTO>().ForMember(dest => dest.EntityId, opt => opt.MapFrom(src => src.ID));
 
         }
     }

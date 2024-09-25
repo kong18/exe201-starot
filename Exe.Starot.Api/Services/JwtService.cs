@@ -23,9 +23,11 @@ namespace Exe.Starot.Api.Services
         {
             var claims = new List<Claim>
         {
-            new(JwtRegisteredClaimNames.Sub, entityId),
-            new(JwtClaimTypes.Email, email),
-            new(ClaimTypes.Role, role)
+
+             new(JwtRegisteredClaimNames.Sub, entityId),
+                new(JwtClaimTypes.Email, email),
+                new(ClaimTypes.Role, role)
+
         };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secret));

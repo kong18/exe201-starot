@@ -32,6 +32,7 @@ namespace Exe.Starot.Application.User.Authenticate
             {
                 throw new NotFoundException("Invalid email or password.");
             }
+            Console.WriteLine($"User ID: {user.ID}"); // Log user.ID for debugging
 
             var accessToken = _jwtService.CreateToken(user.ID, user.Email, user.Role);
             var refreshToken = _jwtService.GenerateRefreshToken();
@@ -39,6 +40,7 @@ namespace Exe.Starot.Application.User.Authenticate
             await _userRepository.UpdateRefreshTokenAsync(user, refreshToken, DateTime.UtcNow.AddDays(30));
 
             var userLoginDto = _mapper.Map<UserLoginDTO>(user);
+            userLoginDto.EntityId = user.ID;
             userLoginDto.Token = accessToken;
             userLoginDto.RefreshToken = refreshToken;
             //if (user.Customers != null)

@@ -9,13 +9,13 @@ namespace Exe.Starot.Application.Order.Create
 {
     public class CreateOrderCommand : IRequest<OrderDTO>
     {
-        public CreateOrderCommand(List<RequestItem> products, string Note)
+        public CreateOrderCommand(List<RequestItem> products)
         {
             Products = products;
-            this.Note = Note;
+           
         }
 
-        public string? Note { get; set; }
+     
         public decimal Total { get; set; } = 0;
         public List<RequestItem> Products { get; set; }
     }
