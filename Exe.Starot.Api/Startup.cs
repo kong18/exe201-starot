@@ -1,6 +1,7 @@
 ﻿using Exe.Starot.Api.Configuration;
 using Exe.Starot.Api.Filters;
 using Exe.Starot.Application;
+using Exe.Starot.Application.Order;
 using Exe.Starot.Infrastructure;
 using Serilog;
 
@@ -20,6 +21,7 @@ namespace Exe.Starot.Api
             services.AddControllers(opt => opt.Filters.Add(typeof(ExceptionFilter)));
                     
             services.AddSignalR();
+            services.AddScoped<OrderService>();
             services.AddApplication(Configuration);
             services.ConfigureApplicationSecurity(Configuration);
             services.ConfigureProblemDetails();
@@ -63,7 +65,8 @@ namespace Exe.Starot.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-             
+                endpoints.MapHub<NotificationHub>("/notificationHub");
+
             });
 
             app.UseSwashbuckle(Configuration);
