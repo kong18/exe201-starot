@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Exe.Starot.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240925143023_v1")]
+    [Migration("20240930092441_v1")]
     partial class v1
     {
         /// <inheritdoc />
@@ -189,6 +189,9 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Property<DateTime?>("DeletedDay")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("IsFavorite")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
@@ -319,57 +322,6 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("OrderDetails");
-                });
-
-            modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.OrderEntity", b =>
-                {
-                    b.Property<string>("ID")
-                        .HasMaxLength(36)
-                        .HasColumnType("nvarchar(36)");
-
-                    b.Property<string>("Code")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DeletedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("DeletedDay")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("LastUpdated")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<decimal>("Total")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<string>("UpdatedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(36)");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.PackageQuestionEntity", b =>
@@ -694,6 +646,61 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("OrderEntity", b =>
+                {
+                    b.Property<string>("ID")
+                        .HasMaxLength(36)
+                        .HasColumnType("nvarchar(36)");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedDay")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("LastUpdated")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PaymentStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(36)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.BookingEntity", b =>
                 {
                     b.HasOne("Exe.Starot.Domain.Entities.Base.CustomerEntity", "Customer")
@@ -772,7 +779,7 @@ namespace Exe.Starot.Infrastructure.Migrations
 
             modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.OrderDetailEntity", b =>
                 {
-                    b.HasOne("Exe.Starot.Domain.Entities.Base.OrderEntity", "Order")
+                    b.HasOne("OrderEntity", "Order")
                         .WithMany("OrderDetails")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -787,17 +794,6 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Navigation("Order");
 
                     b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.OrderEntity", b =>
-                {
-                    b.HasOne("Exe.Starot.Domain.Entities.Base.UserEntity", "User")
-                        .WithMany("Orders")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.ReaderEntity", b =>
@@ -830,6 +826,17 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("OrderEntity", b =>
+                {
+                    b.HasOne("Exe.Starot.Domain.Entities.Base.UserEntity", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.AchievementEntity", b =>
                 {
                     b.Navigation("UserAchievements");
@@ -840,11 +847,6 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Navigation("Bookings");
 
                     b.Navigation("Feedbacks");
-                });
-
-            modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.OrderEntity", b =>
-                {
-                    b.Navigation("OrderDetails");
                 });
 
             modelBuilder.Entity("Exe.Starot.Domain.Entities.Base.PackageQuestionEntity", b =>
@@ -877,6 +879,11 @@ namespace Exe.Starot.Infrastructure.Migrations
                     b.Navigation("Readers");
 
                     b.Navigation("UserAchievements");
+                });
+
+            modelBuilder.Entity("OrderEntity", b =>
+                {
+                    b.Navigation("OrderDetails");
                 });
 #pragma warning restore 612, 618
         }

@@ -13,5 +13,5 @@ public class OrderEntity : Entity
 
     public virtual UserEntity User { get; set; }
     public virtual ICollection<OrderDetailEntity> OrderDetails { get; set; }
-    public virtual ICollection<TransactionEntity> Transactions { get; set; }
+    //public virtual ICollection<TransactionEntity> Transactions { get; set; }
 }
