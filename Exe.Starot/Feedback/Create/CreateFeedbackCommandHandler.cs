@@ -26,8 +26,7 @@ namespace Exe.Starot.Application.Feedback.Create
         public async Task<string> Handle(CreateFeedbackCommand request, CancellationToken cancellationToken)
         {
             string customerid = _currentUserService.UserId;
-            Console.WriteLine($"Current user ID: {_currentUserService.UserId}");
-
+         
             if (string.IsNullOrEmpty(customerid))
             {
                 throw new UnauthorizedAccessException("User is not logged in.");
