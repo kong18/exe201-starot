@@ -1,6 +1,7 @@
 ﻿using Exe.Starot.Api.Configuration;
 using Exe.Starot.Api.Filters;
 using Exe.Starot.Application;
+using Exe.Starot.Application.FileUpload;
 using Exe.Starot.Application.Order;
 using Exe.Starot.Infrastructure;
 using Serilog;
@@ -41,10 +42,22 @@ namespace Exe.Starot.Api
 
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 
-            // Additional loggi
-       
-        }
+            // Additional logging
+            var firebaseSection = Configuration.GetSection("FirebaseConfig");
+            if (!firebaseSection.Exists())
+            {
+                throw new ArgumentNullException("FirebaseConfig section does not exist in configuration.");
+            }
 
+            var firebaseConfig = firebaseSection.Get<FirebaseConfig>();
+            if (firebaseConfig == null)
+            {
+                throw new ArgumentNullException(nameof(firebaseConfig), "FirebaseConfig section is missing in configuration.");
+            }
+
+            services.AddSingleton(firebaseConfig);
+            services.AddSingleton<FileUploadService>();
+        }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

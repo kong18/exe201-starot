@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
         "projectName": "Exe.Starot.Api",
         "projectPath": "D:\\exe201-starot\\Exe.Starot.Api\\Exe.Starot.Api.csproj",
-        "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
         "outputPath": "D:\\exe201-starot\\Exe.Starot.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -126,11 +126,11 @@
         "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
         "projectName": "Exe.Starot.Domain",
         "projectPath": "D:\\exe201-starot\\Exe.Starot.Domain\\Exe.Starot.Domain.csproj",
-        "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
         "outputPath": "D:\\exe201-starot\\Exe.Starot.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -181,7 +181,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -191,11 +191,11 @@
         "projectUniqueName": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
         "projectName": "Exe.Starot.Infrastructure",
         "projectPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\Exe.Starot.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
         "outputPath": "D:\\exe201-starot\\Exe.Starot.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -290,7 +290,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -300,11 +300,11 @@
         "projectUniqueName": "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj",
         "projectName": "Exe.Starot.Application",
         "projectPath": "D:\\exe201-starot\\Exe.Starot\\Exe.Starot.Application.csproj",
-        "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
         "outputPath": "D:\\exe201-starot\\Exe.Starot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -341,6 +341,14 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.2, )"
@@ -348,6 +356,10 @@
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[11.9.2, )"
+            },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.68.0, )"
             },
             "MediatR": {
               "target": "Package",
@@ -389,6 +401,10 @@
               "target": "Package",
               "version": "[4.0.1, )"
             },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "System.Net.Http": {
               "target": "Package",
               "version": "[4.3.4, )"
@@ -410,7 +426,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
