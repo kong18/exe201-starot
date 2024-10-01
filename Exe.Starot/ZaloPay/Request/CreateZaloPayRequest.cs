@@ -38,29 +38,14 @@ namespace Exe.Starot.Application.ZaloPay.Request
 
         public void MakeSignature(string key)
         {
-            var data = AppId + "|" + AppTransId + "|" + AppUser + "|" + Amount + "|" + AppTime + "|" + "|";
+            var data = $"{AppId}|{AppTransId}|{AppUser}|{Amount}|{AppTime}|{BankCode}|{Description}";
 
-            this.Mac = HmacSha512(data, key);
-
+            // Use the HmacHelper from the downloaded code to generate the signature
+            Mac = HmacHelper.Compute(ZaloPayHMAC.HMACSHA256, key, data);
         }
 
 
-        private string HmacSha512(string key, string inputData)
-        {
-            var hash = new StringBuilder();
-            var keyBytes = Encoding.UTF8.GetBytes(key);
-            var inputBytes = Encoding.UTF8.GetBytes(inputData);
-            using (var hmac = new HMACSHA512(keyBytes))
-            {
-                var hashValue = hmac.ComputeHash(inputBytes);
-                foreach (var theByte in hashValue)
-                {
-                    hash.Append(theByte.ToString("x2"));
-                }
-            }
-
-            return hash.ToString();
-        }
+       
 
 
         public Dictionary<string,string> GetContent()

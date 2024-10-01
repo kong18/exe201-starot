@@ -17,8 +17,12 @@ D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Azure.Core.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Azure.Identity.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Castle.Core.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\FirebaseAdmin.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Firebase.Storage.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\FluentValidation.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Google.Api.Gax.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Google.Api.Gax.Rest.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Google.Apis.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Google.Apis.Auth.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Google.Apis.Core.dll
@@ -70,6 +74,7 @@ D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Serilog.Settings.Configuration.
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\SixLabors.ImageSharp.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\exe201-starot\Exe.Starot.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll

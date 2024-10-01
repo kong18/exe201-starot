@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Exe.Starot.Domain.Common.Interfaces;
+using Exe.Starot.Domain.Entities.Base;
 using Exe.Starot.Domain.Entities.Repositories;
 using Exe.Starot.Infrastructure.Persistence;
 using Exe.Starot.Infrastructure.Repositories;
@@ -29,9 +30,13 @@ namespace Exe.Starot.Infrastructure
 
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IOrderRepository, OrderRepository>();
+            services.AddTransient<IReaderRepository,ReaderRepository>();
             services.AddTransient<IOrderDetailRepository, OrderDetailRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
-
+            services.AddTransient<ITarotCardRepository, TarotCardRepository>();
+            services.AddTransient<IFavoriteProductRepository, FavoriteProductRepository>();
+            services.AddTransient<IPackageQuestionRepository, PackageQuestionRepository>();
+            services.AddTransient<IFeedBackRepository, FeedBackRepository>();
             services.AddAutoMapper(typeof(ApplicationDbContext));
 
             return services;

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Exe.Starot.Application.Payment
 {
-    internal class PaymentLinkDtos
+    public class PaymentLinkDtos
     {
+        public string PaymentId { get; set; } = string.Empty;
+        public string PaymentUrl { get; set; } = string.Empty;
     }
 }

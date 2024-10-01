@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exe.Starot.Application.Payment.Create
 {
-    internal class CreatePayment
+    public  class CreatePayment
     {
     }
 }

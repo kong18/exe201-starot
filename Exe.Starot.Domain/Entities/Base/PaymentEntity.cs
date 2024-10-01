@@ -13,6 +13,6 @@ namespace Exe.Starot.Domain.Entities.Base
         public string Status { get; set; } // Completed, Pending, Failed
         public string TransactionId { get; set; }
 
-        public virtual TransactionEntity Transaction { get; set; }
+        //public virtual TransactionEntity Transaction { get; set; }
     }
 }
