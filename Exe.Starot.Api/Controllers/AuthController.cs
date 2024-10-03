@@ -1,5 +1,6 @@
 ﻿using Exe.Starot.Application.Common.Interfaces;
 using Exe.Starot.Application.User.Authenticate;
+using Exe.Starot.Application.User.Register;
 using Exe.Starot.Domain.Entities.Base;
 using Exe.Starot.Domain.Entities.Repositories;
 using IdentityModel;
@@ -42,6 +43,25 @@ namespace Exe.Starot.Api.Controllers
             var result = await _mediator.Send(loginQuery, cancellationToken);
             return Ok(result);
         }
-    }
+
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterUserCommand command)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                var result = await _mediator.Send(command);
+                return Ok(new { message = result });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+        }
 
 }

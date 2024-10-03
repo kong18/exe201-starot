@@ -25,7 +25,7 @@ namespace Exe.Starot.Api.Services
         {
 
              new(JwtRegisteredClaimNames.Sub, entityId),
-                new(JwtClaimTypes.Email, email),
+                new(ClaimTypes.Email, email),
                 new(ClaimTypes.Role, role)
 
         };
