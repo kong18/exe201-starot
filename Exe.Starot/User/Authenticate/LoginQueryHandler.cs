@@ -34,7 +34,7 @@ namespace Exe.Starot.Application.User.Authenticate
             }
             Console.WriteLine($"User ID: {user.ID}"); // Log user.ID for debugging
 
-            var accessToken = _jwtService.CreateToken(user.ID, user.Email, user.Role);
+            var accessToken = _jwtService.CreateToken(user.ID, user.Role, user.Email);
             var refreshToken = _jwtService.GenerateRefreshToken();
 
             await _userRepository.UpdateRefreshTokenAsync(user, refreshToken, DateTime.UtcNow.AddDays(30));
